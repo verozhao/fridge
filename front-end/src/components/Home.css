@@ -1,0 +1,211 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: "Inter", "Roboto", sans-serif;
+}
+
+.home-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #314c2c;
+}
+
+/* Logo Styling */
+.logo-container {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 26px;
+    font-weight: bold;
+    color: #314c2c;
+    margin-bottom: 10px;
+}
+
+.fridge-summary {
+    display: flex;
+    flex-direction: column; /* Ensure title is on its own line */
+    align-items: flex-start; /* Align everything to the left */
+    gap: 10px; /* Space between title and cards */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+}
+
+.summary-card, .expiring-card{
+    background: #f8ebd877;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.summary-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4d7745;
+}
+
+.summary-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4d7745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.summary-button:hover {
+    background-color: #6fac63;
+}
+
+
+/* Recipe Recommendations */
+.recipe-recommendations {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.recipe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-item:hover {
+    transform: scale(1.05);
+}
+
+.recipe-thumbnail {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-name {
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.recipe-time {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+.overlay-card {
+    background: linear-gradient(to bottom, #a5d7bea3 , #feecd3);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;            /* Use % for responsive width */
+    max-width: 500px;      /* Prevent it from getting too large on big screens */
+    min-width: 300px;      /* Optional: for very small screens */
+    height: auto;          /* You can set a fixed height if you prefer */
+}
+  
+  
+.overlay-card p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+  
+.overlay-card button {
+    background: none;
+    border: none;
+    color: #5a8950;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.starter-items-button {
+    background-color: #4d7745 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-button {
+    background-color: #828282 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.starter-items-prompt {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.starter-items-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4d7745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,41 @@
+
+.account-setting{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    padding: 5px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.account-change{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:10px;
+    align-items: center;
+    background-color: #f8ebd877;
+    width: 70%;
+    border-radius: 12px;
+}
+
+.account-change p{
+    color:rgb(0, 0, 0)
+}
+
+.account-change button{
+    padding: 6px;
+    background-color: var(--primary-color);
+    color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 15px;
+}
+
+.account-change button:hover{
+    background: var(--primary-dark);
+}
+
+.profile-image img{
+    width: 200px;
+}

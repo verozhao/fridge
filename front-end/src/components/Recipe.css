@@ -1,0 +1,48 @@
+/* src/components/Recipe.css */
+
+.recipe {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+  
+.recipe-image {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+  
+.recipe-info {
+    padding: 12px;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+  
+.recipe-info name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: black;
+}
+  
+.recipe-info time {
+    font-size: .8rem;
+    color: rgb(74, 74, 74);
+    margin: 0;
+}
+  
+
+  
