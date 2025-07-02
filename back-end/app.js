@@ -17,8 +17,7 @@ const recommendationsRoutes = require('./routes/recommendations');
 app.use(express.json());
 
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://new-fridge-9qc4v.ondigitalocean.app"
+  "http://localhost:3000"
 ];
 
 app.use(cors({
